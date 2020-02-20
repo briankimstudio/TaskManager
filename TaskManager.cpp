@@ -1,3 +1,9 @@
+/**
+ * Periodic task manager for Arduino/ESP8266/ESP32
+ *  * 
+ * February 2020, Brian Kim
+ */
+
 #include "TaskManager.h"
 
 TaskManager::TaskManager() {
@@ -10,6 +16,7 @@ int TaskManager::addTask(unsigned long interval,void(*callback)(), int runOnce) 
     _table.push_back(newTask);
     return _id++;
 };
+
 void TaskManager::run() {
     unsigned long currentMillis = millis();
     std::vector<taskItem>::iterator p = _table.begin();

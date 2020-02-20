@@ -1,3 +1,9 @@
+/**
+ * Periodic task manager for Arduino/ESP8266/ESP32
+ *  * 
+ * February 2020, Brian Kim
+ */
+
 #ifndef Task_Manager_h
 #define Task_Manager_h
 
