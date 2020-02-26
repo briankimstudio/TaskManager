@@ -1,5 +1,6 @@
 # TaskManager
 Periodic task manager for Arduino/ESP8266/ESP32
+
 Developing an application for Arduino/ESP8266/ESP32 often requires a need for executing certain functions at a specified interval. For example, if we want to turn LED on and off periodically, we may use delay() or millis() function to control it repeatedly. However, it is tedious to code control routines every time manually. That's exactly where TaskManager comes in to help you out and let you focus on the core logic.
 
 TaskManager suppors two types of task; periodic task and run once task. 
